@@ -5,7 +5,9 @@ Each entry includes the git commit hash where applicable.
 
 ---
 
-## [2026-04-14] — Brand Palette Locked — Option A (Warm Premium)
+## [2026-04-14] — Brand Palette Locked — Option A (Warm Premium) `5ec0b1a`
+
+Prior commit `8b3a7e6` tracked accumulated state from earlier sessions (resources/ tree, ashish-pic.JPG, revised plan edits) so this commit could focus purely on the brand decision.
 
 ### Decision
 - **Locked primary palette:** Palette A (Warm Premium) — warm cream `#F8F3EC`, deep espresso `#2C1810`, burnt sienna `#C65D2E`, warm taupe `#8B7355`, cream border `#E8DDD0`
