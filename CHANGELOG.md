@@ -5,6 +5,43 @@ Each entry includes the git commit hash where applicable.
 
 ---
 
+## [2026-04-14] — All 9 Brand Assets Generated in Palette A
+
+### Added
+- All 9 final brand assets generated via Nano Banana Pro (`google/gemini-3-pro-image-preview`) through OpenRouter, using locked Palette A:
+  - `resources/logo/ai-forte-logo.png` — primary wordmark lockup (2K)
+  - `resources/logo/ai-forte-icon.png` — icon-only square
+  - `resources/linkedin/ai-forte-linkedin-banner.png` — 4:1 cover (2K)
+  - `resources/og/ai-forte-og-image-{1,2}.jpg` — 16:9 Open Graph (2 variations)
+  - `resources/social/ai-forte-post-template-{1,2}.jpg` — reusable square (2 variations)
+  - `resources/social/ai-forte-summit-announcement-{1,2}.jpg` — 16:9 Summit post (2 variations)
+  - `resources/business-card/ai-forte-business-card-{1,2}.jpg` — 9:16 portrait (2 variations)
+  - `resources/one-pager/ai-forte-one-pager-header-{1,2}.jpg` — 3:1 banner (2 variations, 2K)
+  - `resources/headshot/ashish-headshot-warm.png` — founder headshot with cream backdrop (edited from `ashish-pic.JPG`)
+- `resources/generation-plan.md` — all 9 prompts organized by asset for future iteration
+- Updated `resources/README.md` with full asset index and regeneration instructions
+
+### Removed
+- `assets/` entire directory (60MB) — duplicate old-palette work from prior sessions
+- `resources/logo/*.svg` — 9 old navy-palette SVGs (primary, white, icon, 3 alt options × 2 forms)
+- `resources/linkedin/banner.html` + 2 PNG screenshots
+- `resources/og/og-image.html`
+- `resources/social/post-template.html`, `summit-announcement.html` + 2 PNG screenshots
+- `resources/business-card/digital-card-cover.html` + 2 PNG screenshots
+- `resources/one-pager/ai-forte-one-pager.html` + 2 PNG header PNGs
+- `resources/prompts/` directory (gemini-3-all-prompts.md — old palette)
+
+### Rationale
+User explicitly flagged previous work as "AI slop" — HTML templates pretending to be images, old navy/indigo/coral palette that was rejected in favor of Palette A. The cleanup removes everything that wasn't generating real visual value and replaces it with actual production-grade images aligned to the locked brand system.
+
+### Technical notes
+- OpenRouter Nano Banana Pro respects hex colors and composition descriptions reliably when prompts follow the 5-component formula
+- Model sometimes returns JPG instead of requested PNG — the skill auto-renames the extension
+- Multi-variation outputs (2 per prompt for some assets) are kept both — pick the preferred one per use case
+- The headshot edit (`--input-image ashish-pic.JPG`) successfully replaced the Golden Gate Bridge background with a warm cream paper backdrop while preserving the subject
+
+---
+
 ## [2026-04-14] — Brand Palette Locked — Option A (Warm Premium) `5ec0b1a`
 
 Prior commit `8b3a7e6` tracked accumulated state from earlier sessions (resources/ tree, ashish-pic.JPG, revised plan edits) so this commit could focus purely on the brand decision.
