@@ -1,26 +1,28 @@
 # Changelog
 
 All notable milestones and decisions for the Adobe Summit 2026 / AI Forte project.
+Each entry includes the git commit hash where applicable.
 
 ---
 
-## [2026-04-13] — Git Init + Project Management Setup
+## [2026-04-13] — Git Init + Project Management Setup `b68e112`
 
 ### Added
 - Initialized git repository for the project management / docs layer
-- `BOARD.md` — kanban board for tracking all workstreams
+- `BOARD.md` — kanban board for tracking all workstreams (30+ items across 6 labels)
 - `CHANGELOG.md` — this file
 - `.gitignore` — excludes `astro-site/` (separate repo), OS files, IDE files
+- Pushed to origin: `github.com/akthechamp/adobe-summit-2026`
 
 ### Changed
-- `README.md` — rewritten as proper project README with status table, quick start, structure, and plans reference
+- `README.md` — rewritten as proper project README with status table, two-repo architecture, quick start, objectives, structure
 
 ### Architecture Decision
-- **Two-repo setup:** This repo covers planning, docs, learning resources, session data, notes, and project management. The `astro-site/` directory is a separate git repository for the AI Forte website (Astro 5 + React 19 + Tailwind 4). They live in the same parent directory but are tracked independently.
+- **Two-repo setup:** This repo (`adobe-summit-2026`) covers planning, docs, learning resources, session data, notes, and project management. The `astro-site/` directory is a separate git repository for the AI Forte website (Astro 5 + React 19 + Tailwind 4). They live in the same parent directory but are tracked independently.
 
 ---
 
-## [2026-04-10] — Revised Plan v2 + AI Forte Website Plan
+## [2026-04-10] — Revised Plan v2 + AI Forte Website Plan *(pre-git — included in `b68e112`)*
 
 ### Added
 - `docs/plans/2026-04-10-revised-summit-preparation.md` — compressed 7-day sprint plan replacing the original 11-day plan
@@ -43,7 +45,7 @@ All notable milestones and decisions for the Adobe Summit 2026 / AI Forte projec
 
 ---
 
-## [2026-04-10] — Curated Learning Resources
+## [2026-04-10] — Curated Learning Resources *(pre-git — included in `b68e112`)*
 
 ### Added
 - `docs/curated-learning-resources.md` — replaced vague "search YouTube" suggestions with specific named resources
@@ -57,7 +59,7 @@ All notable milestones and decisions for the Adobe Summit 2026 / AI Forte projec
 
 ---
 
-## [2026-04-07] — Resource Curation Overhaul
+## [2026-04-07] — Resource Curation Overhaul *(pre-git — included in `b68e112`)*
 
 ### Changed
 - Main plan updated to reference curated resources document instead of inline vague links
@@ -66,7 +68,7 @@ All notable milestones and decisions for the Adobe Summit 2026 / AI Forte projec
 
 ---
 
-## [2026-04-06] — Project Inception
+## [2026-04-06] — Project Inception *(pre-git — included in `b68e112`)*
 
 ### Added
 - `docs/plans/2026-04-06-adobe-summit-preparation.md` — original 11-day preparation plan (now superseded)
