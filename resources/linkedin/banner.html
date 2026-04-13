@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Forte — LinkedIn Banner (1584x396)</title>
+<style>
+  /* Screenshot this at exactly 1584x396 */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  body {
+    width: 1584px;
+    height: 396px;
+    overflow: hidden;
+    font-family: 'Inter', -apple-system, sans-serif;
+  }
+
+  .banner {
+    width: 1584px;
+    height: 396px;
+    background: linear-gradient(135deg, #0A1628 0%, #0F1D32 40%, #131F35 70%, #0A1628 100%);
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+  }
+
+  /* Subtle grid overlay */
+  .grid-overlay {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(91,91,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(91,91,255,0.03) 1px, transparent 1px);
+    background-size: 40px 40px;
+  }
+
+  /* Orchestration network visualization — right side */
+  .network {
+    position: absolute;
+    right: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 340px;
+  }
+
+  .node {
+    position: absolute;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(91,91,255,0.3);
+  }
+
+  .node-1 { width: 48px; height: 48px; background: #5B5BFF; top: 50%; left: 50%; transform: translate(-50%, -50%); box-shadow: 0 0 40px rgba(91,91,255,0.5); }
+  .node-2 { width: 32px; height: 32px; background: rgba(91,91,255,0.7); top: 15%; left: 70%; }
+  .node-3 { width: 28px; height: 28px; background: rgba(255,91,91,0.7); top: 75%; left: 75%; box-shadow: 0 0 20px rgba(255,91,91,0.3); }
+  .node-4 { width: 24px; height: 24px; background: rgba(91,91,255,0.5); top: 30%; left: 20%; }
+  .node-5 { width: 20px; height: 20px; background: rgba(91,91,255,0.4); top: 80%; left: 25%; }
+  .node-6 { width: 18px; height: 18px; background: rgba(91,91,255,0.35); top: 10%; left: 35%; }
+  .node-7 { width: 22px; height: 22px; background: rgba(255,91,91,0.4); top: 55%; left: 85%; }
+
+  /* Connection lines via SVG */
+  .connections {
+    position: absolute;
+    inset: 0;
+  }
+
+  /* Left content — offset right to avoid LinkedIn profile photo overlay */
+  .content {
+    position: relative;
+    z-index: 10;
+    padding-left: 220px;
+    max-width: 900px;
+  }
+
+  .headline {
+    font-size: 42px;
+    font-weight: 800;
+    color: #FFFFFF;
+    line-height: 1.15;
+    letter-spacing: -0.5px;
+    margin-bottom: 16px;
+  }
+
+  .headline .accent { color: #5B5BFF; }
+
+  .sub {
+    font-size: 17px;
+    font-weight: 500;
+    color: rgba(255,255,255,0.5);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .sub .dot { color: #FF5B5B; margin: 0 8px; }
+
+  /* Subtle glow behind content */
+  .glow {
+    position: absolute;
+    width: 600px;
+    height: 400px;
+    background: radial-gradient(ellipse, rgba(91,91,255,0.08) 0%, transparent 70%);
+    top: 50%;
+    left: 300px;
+    transform: translateY(-50%);
+  }
+</style>
+</head>
+<body>
+<div class="banner">
+  <div class="grid-overlay"></div>
+  <div class="glow"></div>
+
+  <!-- Network visualization -->
+  <div class="network">
+    <svg class="connections" viewBox="0 0 500 340" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- Lines from center to satellites -->
+      <line x1="250" y1="170" x2="350" y2="51" stroke="#5B5BFF" stroke-width="1.2" opacity="0.25"/>
+      <line x1="250" y1="170" x2="375" y2="255" stroke="#FF5B5B" stroke-width="1.2" opacity="0.2"/>
+      <line x1="250" y1="170" x2="100" y2="102" stroke="#5B5BFF" stroke-width="1.2" opacity="0.2"/>
+      <line x1="250" y1="170" x2="125" y2="272" stroke="#5B5BFF" stroke-width="1.2" opacity="0.15"/>
+      <line x1="250" y1="170" x2="175" y2="34" stroke="#5B5BFF" stroke-width="1" opacity="0.15"/>
+      <line x1="250" y1="170" x2="425" y2="187" stroke="#FF5B5B" stroke-width="1" opacity="0.15"/>
+      <!-- Cross connections -->
+      <line x1="350" y1="51" x2="375" y2="255" stroke="#5B5BFF" stroke-width="0.8" opacity="0.1"/>
+      <line x1="100" y1="102" x2="125" y2="272" stroke="#5B5BFF" stroke-width="0.8" opacity="0.1"/>
+      <line x1="175" y1="34" x2="350" y2="51" stroke="#5B5BFF" stroke-width="0.8" opacity="0.08"/>
+    </svg>
+    <div class="node node-1"></div>
+    <div class="node node-2"></div>
+    <div class="node node-3"></div>
+    <div class="node node-4"></div>
+    <div class="node node-5"></div>
+    <div class="node node-6"></div>
+    <div class="node node-7"></div>
+  </div>
+
+  <!-- Copy -->
+  <div class="content">
+    <h1 class="headline">
+      Orchestrating <span class="accent">AI Agents</span><br>
+      on Adobe Experience Cloud
+    </h1>
+    <p class="sub">
+      AI Forte<span class="dot">&bull;</span>Commerce<span class="dot">&bull;</span>Marketo<span class="dot">&bull;</span>AEM<span class="dot">&bull;</span>Agent Orchestrator
+    </p>
+  </div>
+</div>
+</body>
+</html>

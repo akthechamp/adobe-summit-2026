@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120">
+  <defs>
+    <linearGradient id="monoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C6BF0"/>
+      <stop offset="100%" stop-color="#5B5BFF"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon: Geometric AF Monogram in rounded square -->
+  <g transform="translate(12, 12)">
+    <rect x="0" y="0" width="96" height="96" rx="20" fill="url(#monoGrad)"/>
+    
+    <!-- Letter A — clean geometric -->
+    <polygon points="32,74 44,22 52,22 64,74 56,74 53,62 43,62 40,74" fill="white" opacity="0.95"/>
+    <polygon points="45,54 51,54 48,38" fill="url(#monoGrad)"/>
+    
+    <!-- Letter F — clean, modern -->
+    <rect x="54" y="22" width="8" height="52" fill="white" opacity="0.95"/>
+    <rect x="54" y="22" width="26" height="8" fill="white" opacity="0.95"/>
+    <rect x="54" y="42" width="20" height="7" fill="white" opacity="0.95"/>
+    
+    <!-- Accent dot -->
+    <circle cx="82" cy="68" r="4" fill="#FF6B6B"/>
+  </g>
+  
+  <!-- Wordmark -->
+  <text x="128" y="74" font-family="'Inter', 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="-2" fill="#0B1426">
+    <tspan fill="#7C6BF0">AI</tspan><tspan fill="#0B1426" dx="4"> Forte</tspan>
+  </text>
+</svg>

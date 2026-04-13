@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 120" width="480" height="120">
+  <defs>
+    <linearGradient id="flowGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6C5CE7"/>
+      <stop offset="50%" stop-color="#5B5BFF"/>
+      <stop offset="100%" stop-color="#FF6B6B"/>
+    </linearGradient>
+    <linearGradient id="flowGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#5B5BFF"/>
+      <stop offset="100%" stop-color="#6C5CE7"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon: Three flowing orchestration arcs with nodes -->
+  <g transform="translate(10, 14)">
+    <!-- Arc paths representing coordinated flow -->
+    <path d="M12 80 C12 80, 24 20, 48 20 C72 20, 84 50, 84 50" 
+          stroke="url(#flowGrad1)" stroke-width="3" fill="none" stroke-linecap="round"/>
+    <path d="M6 68 C6 68, 30 32, 48 32 C66 32, 90 68, 90 68" 
+          stroke="url(#flowGrad2)" stroke-width="2.5" fill="none" stroke-linecap="round" opacity="0.6"/>
+    <path d="M18 88 C18 88, 36 48, 48 48 C60 48, 78 88, 78 88" 
+          stroke="#6C5CE7" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.35"/>
+    
+    <!-- Key nodes along the flow -->
+    <circle cx="48" cy="20" r="5.5" fill="#6C5CE7"/>
+    <circle cx="12" cy="80" r="4" fill="#5B5BFF"/>
+    <circle cx="84" cy="50" r="4" fill="#FF6B6B"/>
+    <circle cx="48" cy="48" r="3" fill="#6C5CE7" opacity="0.6"/>
+  </g>
+  
+  <!-- Wordmark -->
+  <text x="114" y="74" font-family="'Inter', 'SF Pro Display', 'Helvetica Neue', Arial, sans-serif" font-size="52" font-weight="700" letter-spacing="-2" fill="#0B1426">
+    <tspan fill="#6C5CE7">AI</tspan><tspan fill="#0B1426" dx="4"> Forte</tspan>
+  </text>
+</svg>

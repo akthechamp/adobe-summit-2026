@@ -411,10 +411,15 @@ You will NOT be exam-ready via 3 hours of prep alone — but combined with the f
   Use the Gemini 3 (Nano Banana Pro) prompts in the **Gemini 3 Image Generation Prompts** section below. Generate in this priority order:
 
   1. **Prompt #1 — Primary logo (wordmark lockup)** → save as `astro-site/public/ai-forte-logo.svg` or `.png`
+     - ✅ **GENERATED:** 3 options in [`assets/logos/`](../../assets/logos/) — pick one, rename to `ai-forte-logo.svg`
   2. **Prompt #2 — Icon-only mark** → save as `astro-site/public/favicon.svg`
+     - ✅ **GENERATED:** 3 options in [`assets/logos/`](../../assets/logos/) — pick one, rename to `favicon.svg`
   3. **Prompt #3 — LinkedIn banner** (1584x396) → upload to LinkedIn immediately
+     - ✅ **GENERATED:** [`assets/linkedin-banner/`](../../assets/linkedin-banner/) — clean + text versions
   4. **Prompt #4 — One-pager PDF header** (1920x640) → save for tomorrow's one-pager
+     - ✅ **GENERATED:** [`assets/one-pager-header/`](../../assets/one-pager-header/) — clean + text versions
   5. **Prompt #5 — Social post template** → keep for post-Summit content
+     - ✅ **GENERATED:** [`assets/social-template/`](../../assets/social-template/) — clean + text versions
 
   As soon as logo + favicon are saved, execute Site Plan **Task 7 steps 4-6** — update BaseLayout.astro with favicon reference, OG image meta tags, and swap the logo in Navbar/Footer. Commit.
 
@@ -524,6 +529,10 @@ You will NOT be exam-ready via 3 hours of prep alone — but combined with the f
   - Add link to: email signature, LinkedIn About section CTA, digital business card
 
 - [ ] **Step 4 — Pre-Summit LinkedIn post with live site link (15 min)**
+
+  > **Post image assets:**
+  > - Clean (for Canva overlay): [`assets/summit-post/summit-attending-clean.png`](../../assets/summit-post/summit-attending-clean.png)
+  > - Ready to post: [`assets/summit-post/summit-attending-with-text.png`](../../assets/summit-post/summit-attending-with-text.png)
 
   Post today (April 16):
   ```
@@ -647,6 +656,11 @@ All prompts use the structure: **Subject → Composition → Style → Technical
 
 ### Prompt 1 — AI Forte Logo (Primary Wordmark)
 
+> **Generated Assets (3 style options, SVG):**
+> - Option A — Node Network: [`assets/logos/logo-wordmark-option-a-nodes.svg`](../../assets/logos/logo-wordmark-option-a-nodes.svg)
+> - Option B — AF Monogram: [`assets/logos/logo-wordmark-option-b-monogram.svg`](../../assets/logos/logo-wordmark-option-b-monogram.svg)
+> - Option C — Flow Mark: [`assets/logos/logo-wordmark-option-c-flow.svg`](../../assets/logos/logo-wordmark-option-c-flow.svg)
+
 ```
 Create a minimalist, premium tech brand logo for "AI Forte" — an AI orchestrator
 agency. The logo should be a horizontal wordmark lockup: a geometric icon on the
@@ -672,6 +686,11 @@ Return as a clean logo asset suitable for a website header and business card.
 
 ### Prompt 2 — AI Forte Logo (Icon Only)
 
+> **Generated Assets (3 style options, SVG):**
+> - Option A — Node Network: [`assets/logos/icon-option-a-nodes.svg`](../../assets/logos/icon-option-a-nodes.svg)
+> - Option B — AF Monogram: [`assets/logos/icon-option-b-monogram.svg`](../../assets/logos/icon-option-b-monogram.svg)
+> - Option C — Flow Mark: [`assets/logos/icon-option-c-flow.svg`](../../assets/logos/icon-option-c-flow.svg)
+
 ```
 Create a standalone icon mark for "AI Forte," an AI orchestrator agency.
 The icon is a minimal geometric symbol representing orchestration — three or
@@ -688,6 +707,10 @@ No text in the icon. No 3D. No gradients. No photorealism.
 ```
 
 ### Prompt 3 — LinkedIn Banner (1584x396 px)
+
+> **Generated Assets (clean + text versions):**
+> - Clean (for Canva overlay): [`assets/linkedin-banner/linkedin-banner-clean.png`](../../assets/linkedin-banner/linkedin-banner-clean.png) — 3168x1344px
+> - With text: [`assets/linkedin-banner/linkedin-banner-with-text.png`](../../assets/linkedin-banner/linkedin-banner-with-text.png) — 3168x1344px
 
 ```
 Create a professional LinkedIn cover banner, 1584x396 pixels, for the founder
@@ -715,6 +738,10 @@ overlay (approximately 150px from left edge, vertically centered).
 
 ### Prompt 4 — One-Pager PDF Header Visual
 
+> **Generated Assets (clean + text versions):**
+> - Clean (for Canva/InDesign overlay): [`assets/one-pager-header/one-pager-header-clean.png`](../../assets/one-pager-header/one-pager-header-clean.png) — 2528x1696px
+> - With text: [`assets/one-pager-header/one-pager-header-with-text.png`](../../assets/one-pager-header/one-pager-header-with-text.png) — 2528x1696px
+
 ```
 Create a horizontal hero banner image, 1920x640 pixels, for the top of a
 B2B agency one-pager PDF titled "AI Forte — The AI Orchestrator Agency."
@@ -740,6 +767,10 @@ High resolution, print-quality, subtle film grain acceptable.
 
 ### Prompt 5 — Social Media Post Template Background
 
+> **Generated Assets (clean + text versions):**
+> - Clean template: [`assets/social-template/social-post-template-clean.png`](../../assets/social-template/social-post-template-clean.png) — 2048x2048px
+> - With sample text: [`assets/social-template/social-post-template-with-text.png`](../../assets/social-template/social-post-template-with-text.png) — 2048x2048px
+
 ```
 Create a square social media post background image, 1080x1080 pixels, for
 LinkedIn and Instagram posts by "AI Forte — AI Orchestrator Agency."
@@ -762,6 +793,10 @@ No text in this generation — this is a reusable template background.
 
 ### Prompt 6 — Digital Business Card (Blinq/Popl) Cover Image
 
+> **Generated Assets (clean + text versions):**
+> - Clean (for Blinq/Popl editor): [`assets/business-card/business-card-clean.png`](../../assets/business-card/business-card-clean.png) — 1536x2752px
+> - With text: [`assets/business-card/business-card-with-text.png`](../../assets/business-card/business-card-with-text.png) — 1536x2752px
+
 ```
 Create a minimal portrait-orientation cover image, 1080x1920 pixels, for a
 digital business card on Blinq/Popl for the founder of "AI Forte —
@@ -783,6 +818,9 @@ High resolution, clean, ready for text overlay in Blinq/Popl editor.
 
 ### Prompt 7 — Professional Headshot Background Replacement
 
+> **Generated Asset:**
+> - Professional headshot (navy gradient BG): [`assets/headshot/headshot-professional.png`](../../assets/headshot/headshot-professional.png) — 1792x2400px
+
 *(If you want to refresh your LinkedIn photo without a photoshoot)*
 
 ```
@@ -797,6 +835,10 @@ business card, and one-pager. Preserve original image resolution.
 ```
 
 ### Prompt 8 — Summit 2026 "I'm Attending" Social Post Image
+
+> **Generated Assets (clean + text versions):**
+> - Clean (for Canva overlay): [`assets/summit-post/summit-attending-clean.png`](../../assets/summit-post/summit-attending-clean.png) — 2752x1536px
+> - With text: [`assets/summit-post/summit-attending-with-text.png`](../../assets/summit-post/summit-attending-with-text.png) — 2752x1536px
 
 ```
 Create a LinkedIn post image, 1200x628 pixels, announcing attendance at

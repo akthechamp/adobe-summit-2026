@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AI Forte — Digital Business Card Cover (1080x1920)</title>
+<style>
+  /* Screenshot at 1080x1920 (portrait) for Blinq/Popl cover */
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+  body {
+    width: 1080px;
+    height: 1920px;
+    overflow: hidden;
+    font-family: 'Inter', sans-serif;
+  }
+
+  .card {
+    width: 1080px;
+    height: 1920px;
+    background: linear-gradient(180deg, #0A1628 0%, #0F1D32 40%, #111F36 70%, #0A1628 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .grid {
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(91,91,255,0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(91,91,255,0.03) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .glow {
+    position: absolute;
+    width: 600px; height: 600px;
+    background: radial-gradient(circle, rgba(91,91,255,0.1) 0%, transparent 70%);
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  /* Top area — logo */
+  .top {
+    margin-top: 180px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  .logo-icon {
+    margin-bottom: 32px;
+  }
+
+  .logo-text {
+    font-size: 48px;
+    font-weight: 800;
+    letter-spacing: -1px;
+  }
+  .logo-text .ai { color: #5B5BFF; }
+  .logo-text .forte { color: #FFFFFF; }
+
+  .tagline {
+    font-size: 17px;
+    color: rgba(255,255,255,0.4);
+    font-weight: 500;
+    margin-top: 12px;
+    letter-spacing: 1px;
+  }
+
+  /* Middle — network visualization */
+  .network-area {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  /* Bottom — contact details area (leave clean for Blinq/Popl overlay) */
+  .bottom {
+    padding-bottom: 200px;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+  }
+
+  .name {
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+  }
+
+  .role {
+    font-size: 18px;
+    color: rgba(255,255,255,0.5);
+    font-weight: 500;
+    margin-bottom: 28px;
+  }
+
+  .services {
+    font-size: 14px;
+    color: rgba(91,91,255,0.6);
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .services .dot {
+    color: rgba(255,91,91,0.4);
+    margin: 0 8px;
+  }
+
+  .divider {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #5B5BFF, transparent);
+    margin: 24px auto;
+  }
+
+  .cta {
+    font-size: 16px;
+    color: rgba(255,255,255,0.35);
+    font-weight: 400;
+    margin-top: 16px;
+  }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="grid"></div>
+  <div class="glow"></div>
+
+  <!-- Logo -->
+  <div class="top">
+    <div class="logo-icon">
+      <svg width="80" height="80" viewBox="0 0 64 64" fill="none">
+        <circle cx="32" cy="32" r="9" fill="#5B5BFF"/>
+        <circle cx="54" cy="14" r="6" fill="#5B5BFF" opacity="0.7"/>
+        <circle cx="56" cy="50" r="5.5" fill="#FF5B5B" opacity="0.8"/>
+        <circle cx="10" cy="22" r="5" fill="#5B5BFF" opacity="0.6"/>
+        <circle cx="14" cy="54" r="4.5" fill="#5B5BFF" opacity="0.5"/>
+        <line x1="32" y1="32" x2="54" y2="14" stroke="#5B5BFF" stroke-width="1.8" opacity="0.4"/>
+        <line x1="32" y1="32" x2="56" y2="50" stroke="#FF5B5B" stroke-width="1.8" opacity="0.35"/>
+        <line x1="32" y1="32" x2="10" y2="22" stroke="#5B5BFF" stroke-width="1.8" opacity="0.35"/>
+        <line x1="32" y1="32" x2="14" y2="54" stroke="#5B5BFF" stroke-width="1.8" opacity="0.3"/>
+        <circle cx="32" cy="32" r="4.5" fill="#0A1628"/>
+        <circle cx="32" cy="32" r="2.8" fill="#5B5BFF"/>
+      </svg>
+    </div>
+    <div class="logo-text"><span class="ai">AI</span><span class="forte"> Forte</span></div>
+    <div class="tagline">The AI Orchestrator Agency</div>
+  </div>
+
+  <!-- Network visualization -->
+  <div class="network-area">
+    <svg width="360" height="360" viewBox="0 0 360 360" fill="none">
+      <!-- Central orchestration node -->
+      <circle cx="180" cy="180" r="24" fill="#5B5BFF" opacity="0.15"/>
+      <circle cx="180" cy="180" r="14" fill="#5B5BFF" opacity="0.3"/>
+      <circle cx="180" cy="180" r="6" fill="#5B5BFF"/>
+      <!-- Satellite nodes -->
+      <circle cx="280" cy="100" r="10" fill="#5B5BFF" opacity="0.25"/>
+      <circle cx="300" cy="260" r="9" fill="#FF5B5B" opacity="0.2"/>
+      <circle cx="80" cy="120" r="8" fill="#5B5BFF" opacity="0.2"/>
+      <circle cx="60" cy="270" r="7" fill="#5B5BFF" opacity="0.15"/>
+      <circle cx="180" cy="40" r="7" fill="#5B5BFF" opacity="0.18"/>
+      <circle cx="180" cy="320" r="8" fill="#FF5B5B" opacity="0.15"/>
+      <!-- Connections -->
+      <line x1="180" y1="180" x2="280" y2="100" stroke="#5B5BFF" stroke-width="1" opacity="0.15"/>
+      <line x1="180" y1="180" x2="300" y2="260" stroke="#FF5B5B" stroke-width="1" opacity="0.12"/>
+      <line x1="180" y1="180" x2="80" y2="120" stroke="#5B5BFF" stroke-width="1" opacity="0.12"/>
+      <line x1="180" y1="180" x2="60" y2="270" stroke="#5B5BFF" stroke-width="1" opacity="0.1"/>
+      <line x1="180" y1="180" x2="180" y2="40" stroke="#5B5BFF" stroke-width="1" opacity="0.12"/>
+      <line x1="180" y1="180" x2="180" y2="320" stroke="#FF5B5B" stroke-width="1" opacity="0.1"/>
+      <!-- Orbit ring -->
+      <circle cx="180" cy="180" r="120" fill="none" stroke="#5B5BFF" stroke-width="0.5" opacity="0.08" stroke-dasharray="6 8"/>
+    </svg>
+  </div>
+
+  <!-- Contact -->
+  <div class="bottom">
+    <div class="name">Ashish Kumar</div>
+    <div class="role">Founder & CEO</div>
+    <div class="divider"></div>
+    <div class="services">
+      Commerce<span class="dot">&bull;</span>Marketo<span class="dot">&bull;</span>AEM<span class="dot">&bull;</span>Agents
+    </div>
+    <div class="cta">Adobe Summit 2026 &mdash; Let's connect</div>
+  </div>
+</div>
+</body>
+</html>
