@@ -5,6 +5,30 @@ Each entry includes the git commit hash where applicable.
 
 ---
 
+## [2026-04-14] — Brand Palette Locked — Option A (Warm Premium)
+
+### Decision
+- **Locked primary palette:** Palette A (Warm Premium) — warm cream `#F8F3EC`, deep espresso `#2C1810`, burnt sienna `#C65D2E`, warm taupe `#8B7355`, cream border `#E8DDD0`
+- Secondary note: Palette E (Aurora Glass) retained as tactical flourish for digital-only 3D isometric moments on astro-site hero (not commitment, escape hatch)
+
+### Added
+- `resources/palette-samples/preview.html` — live side-by-side preview of 5 palette candidates applied to identical AI Forte mockup (wordmark, badge, headline, CTAs, card, stats, typography)
+- `resources/palette-samples/DECISION.md` — full decision record with reasoning across 5 evaluation axes (sea-of-sameness, Adobe theme alignment, audience psychology, asset durability, memorability)
+- `resources/palette-samples/prompt-{a,b,c,d}-*.txt` — Gemini prompts for 4 initial palette candidates (preserved as historical reference)
+- `resources/palette-samples/README.md` — historical research trail
+- `resources/brand-system.md` — locked brand system spec: colors, typography, logo construction rules, component primitives (buttons, badges, cards, stats), voice & visual language
+
+### Context
+- Original plan to generate palette samples via Gemini API blocked by Google eliminating free tier for image models in late 2025 (2.5-flash-image and 3.1-flash-image-preview both return `limit: 0`)
+- Pivoted to local HTML mockup approach — shows all palettes applied to same AI Forte UI components simultaneously, no generation quota needed
+- Evaluated A, B, C, D initially; user requested E (Aurora Glass) for liquid-glass/isometric-3D support
+- Narrowed to A vs E; chose A on: differentiation in sea of dark tech brands, SMB/mid-market buyer trust psychology, print/CMYK durability, and memorability at Summit
+
+### Invalidated
+- All assets in `resources/logo/`, `resources/linkedin/`, `resources/og/`, `resources/social/`, `resources/business-card/`, `resources/one-pager/` currently use the old navy + indigo + coral palette from early project sessions — marked ⏳ in `brand-system.md` for regeneration in Palette A
+
+---
+
 ## [2026-04-13] — Git Init + Project Management Setup `b68e112`
 
 ### Added

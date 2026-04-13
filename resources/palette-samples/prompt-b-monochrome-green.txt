@@ -1,0 +1,15 @@
+A radical minimalist B2B tech brand identity poster sample card. Centered wordmark reading "AI Forte" in a bold condensed geometric sans-serif letterform, set high in the upper-center of the composition. Directly below the wordmark, a small precise orchestration diagram: four circular nodes connected by thin hairline lines forming a balanced asymmetric network pattern, rendered with mathematical precision.
+
+Background: pure absolute black (#0A0A0A), completely flat, no texture, no gradient, no vignette. Photographed as if the poster is floating in total darkness.
+
+Typography: "AI Forte" rendered in pure white (#FFFFFF), the "AI" slightly bolder than "Forte" for hierarchy, tight tracking, modern geometric sans-serif letterforms, high contrast against the black field, sharp edges.
+
+Accent color: the network nodes and connecting hairlines are rendered in signal green (#00FF88), a vibrant electric lime-green that pops against the black, the single central orchestrator node slightly larger and fully saturated.
+
+Composition: extreme whitespace, minimal ink, balanced vertical axis, the wordmark occupies the upper third and the network diagram occupies the lower third, 16:9 landscape orientation, feels like a Linear or Vercel product launch page.
+
+Lighting: flat even illumination as if viewed on a high-contrast OLED display, no shadows, no texture, no film grain.
+
+Style: extreme minimalism in the aesthetic of Linear, Vercel, Anthropic, and Palantir brand identity materials, no gradients, no 3D, no glow effects, no decorative elements whatsoever. Every pixel intentional. Commercial photography for a confident developer-first technology brand.
+
+NEVER include any additional text, labels, logos, product mockups, people, icons, or decorative elements beyond the wordmark and the network diagram.

@@ -1,0 +1,15 @@
+A modern developer-focused B2B tech brand identity poster sample card. Centered wordmark reading "AI Forte" in a bold condensed geometric sans-serif letterform, set high in the upper-center of the composition. Directly below the wordmark, a small precise orchestration diagram: four circular nodes connected by thin hairline lines forming a balanced asymmetric network pattern, rendered with mathematical precision.
+
+Background: deep graphite (#1C1C1E), completely flat like a high-end developer IDE dark theme, no texture, no gradient, no vignette, subtle matte finish.
+
+Typography: "AI Forte" rendered in cool light grey (#E8E8ED), the "AI" slightly bolder than "Forte" for hierarchy, tight tracking, modern geometric sans-serif letterforms, high contrast against the graphite field, sharp edges.
+
+Accent color: the network nodes and connecting hairlines are rendered in acid lime (#D4FF3A), a vibrant chartreuse-yellow that pops against the graphite, the single central orchestrator node slightly larger and fully saturated acid lime, satellite nodes slightly dimmer.
+
+Composition: balanced whitespace, the wordmark occupies the upper third and the network diagram occupies the lower third, 16:9 landscape orientation, feels like a Figma dark mode splash screen or a high-end developer tool onboarding card.
+
+Lighting: flat even illumination as if viewed on a high-quality display, no shadows, no film grain, clean pixel-perfect rendering.
+
+Style: late-night developer workstation aesthetic, reminiscent of Figma dark mode, GitHub dark theme, Raycast, and Arc browser brand identity materials. Technical confidence through restraint. No gradients, no 3D, no glow effects, no decorative elements. Commercial photography for a confident developer-first technology brand.
+
+NEVER include any additional text, labels, logos, product mockups, people, or decorative elements beyond the wordmark and the network diagram.
