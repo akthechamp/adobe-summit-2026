@@ -1,5 +1,14 @@
 # Astro Site — Dual Theme Implementation Plan
 
+> ## ⚠️ SUPERSEDED — DO NOT EXECUTE
+>
+> **Status:** Superseded on 2026-04-14
+> **Replaced by:** [`2026-04-14-astro-palette-a-migration.md`](./2026-04-14-astro-palette-a-migration.md)
+>
+> **Reason:** The dark mode (Palette E — Aurora Glass) was dropped after evaluation. AI Forte commits to **single-theme Palette A (Warm Premium)** as the only brand aesthetic across all surfaces — site, collateral, and assets. The dual-theme infrastructure (toggle, FOUC prevention, theme tokens for both palettes, glass utilities per theme) is no longer needed.
+>
+> This plan is preserved as historical reference. Do not execute. Use the replacement plan above instead, which is ~1/3 the scope (single palette, no toggle, no FOUC script, just a flat repaint).
+
 > **For agentic workers:** REQUIRED SUB-SKILL: Use superpowers:subagent-driven-development (recommended) or superpowers:executing-plans to implement this plan task-by-task. Steps use checkbox (`- [ ]`) syntax for tracking.
 
 **Goal:** Add a light/dark theme system to `astro-site/` where light mode uses Palette A (Warm Premium) and dark mode uses Palette E (Aurora Glass), with a user-facing toggle and persistent preference.
