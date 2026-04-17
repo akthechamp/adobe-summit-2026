@@ -4,7 +4,6 @@
 
 **Goal:** Prepare Ashish Kumar (agency owner, 20-person team) to attend Adobe Summit 2026 (April 19-22, Las Vegas) with the knowledge, collateral, certifications strategy, and networking plan needed to generate leads and customers for web/mobile/ecommerce/CRM services.
 
-**Architecture:** 11-day sprint (April 6-17) with ~2-3 hrs/day (~30 hrs total). Split into: Adobe ecosystem learning, certification prep, collateral creation, LinkedIn optimization, session planning, networking strategy, and lead capture system.
 
 **Key Constraints:**
 - Departure: Evening of April 17

@@ -2,7 +2,6 @@
 
 > Preparation hub for Adobe Summit 2026 (April 19-22, Las Vegas). Learning, certifications, collateral, website, networking — everything needed to launch **AI Forte** as an AI Orchestrator Agency at Adobe's flagship event.
 
-## Status
 
 | Area | Status | Notes |
 |------|--------|-------|
@@ -14,15 +13,11 @@
 | **Collateral** | Daily shipping | Logo, banner, one-pager, digital card |
 | **Event** | April 19-22 | The Venetian, Las Vegas |
 
----
-
-## Quick Start
 
 ```bash
 # This repo: project management, plans, docs, learning resources
 git log --oneline -5              # see recent progress
 cat BOARD.md                       # see kanban board
-
 # AI Forte website (SEPARATE REPO in sibling directory)
 cd astro-site && npm install && npm run dev
 # Opens at http://localhost:4321

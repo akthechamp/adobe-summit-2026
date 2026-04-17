@@ -20,7 +20,6 @@
 | Hands-on Lab | 39 |
 | Community Pavilion Theater | 24 |
 | Preconference Training | 12 |
-| Certification Exam | 9 |
 | Strategy Keynote | 4 |
 | Conference Event | 3 |
 | Keynote | 2 |
