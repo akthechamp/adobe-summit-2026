@@ -4,7 +4,83 @@
 
 **Supersedes:** `2026-04-06-adobe-summit-preparation.md` (original plan)
 **Created:** April 10, 2026
+**Last reality-check:** **April 17, 2026** — see [Current State](#current-state--reality-check-apr-17) section immediately below.
 **Goal:** Execute a compressed 7-day prep sprint (Apr 11-17) + flight content pack, with a new **AI Forte** (AI Orchestrator Agency) positioning layered in.
+
+---
+
+## Current State — Reality Check (Apr 17)
+
+> **Departure is TONIGHT.** This section supersedes the day-by-day schedule below for everything already shipped. Use it as the single source of truth for what remains.
+
+### Shipped
+- **Brand system locked** (Apr 14, `5ec0b1a`) — Palette A (Warm Premium): cream `#F8F3EC`, espresso `#2C1810`, sienna `#C65D2E`, taupe `#8B7355`. Decision record in `resources/palette-samples/DECISION.md`, spec in `resources/brand-system.md`.
+- **All 9 brand assets generated** (Apr 14, `c1b3be3`) via Nano Banana Pro in Palette A:
+  - Logo wordmark + icon → `resources/logo/`
+  - LinkedIn banner → `resources/linkedin/`
+  - OG image (×2) → `resources/og/`
+  - Social post template (×2) → `resources/social/`
+  - Summit announcement (×2) → `resources/social/`
+  - Business card cover (×2) → `resources/business-card/`
+  - One-pager header (×2, 2K) → `resources/one-pager/`
+  - Founder headshot on warm cream → `resources/headshot/ashish-headshot-warm.png`
+- **Website content + SEO pass** (Apr 17, multiple commits in `astro-site/`) — honest stats, removed fake testimonials/compliance claims, added Terms + Privacy pages, canonical + OG + Organization JSON-LD, `llms.txt` / `llms-full.txt` for AI answer engines, UTM/gclid/referrer attribution.
+- **Scroll-narrative Phase A** (Apr 17, astro-site commits `3b028db` → `6806279`) — Chapter 1 Hook + Chapter 2 Problem replacing stacked HeroSection; chapter scaffolding lib; reduced-motion fallback.
+- **Project management layer** — `BOARD.md`, `CHANGELOG.md`, git repo at `github.com/akthechamp/adobe-summit-2026`.
+- **Dark mode dropped** (`f0699cd`) — Palette E abandoned; dual-theme plan marked superseded.
+- **Foundation research + curated resources** — `docs/curated-learning-resources.md`, `sessions-parsed.md` (325 sessions), foundation reading done.
+
+### Partially done / in flux
+- **Website scroll-narrative Phase B** — Chapters 3–6 (Solution, Proof, CTA, epilogue) not shipped. `src/pages/index.astro` still mixes chapters with legacy sections. See `docs/plans/2026-04-17-scroll-narrative-transformation.md`.
+- **Palette A migration on the site itself** — colors locked but components not fully repainted per `docs/plans/2026-04-14-astro-palette-a-migration.md`.
+- **Logo revisit** — `docs/plans/2026-04-14-logo-revisit.md` deferred; text wordmark in use on site.
+
+### NOT started — these are the Apr 17 departure blockers
+- **Website NOT DEPLOYED.** No Vercel/live URL. `dist/` builds locally. Deploy unblocks the one-pager, LinkedIn post, business card, email signature. **#1 blocker.**
+- **One-pager PDF not composed** — JPG header exists, no final PDF.
+- **LinkedIn profile overhaul not executed** — banner ready, headline/About/skills/Featured/QR not updated on the live profile.
+- **Digital business card** — Blinq/Popl not set up.
+- **Lead capture Google Sheet** — not created.
+- **Calendly "AI Forte — 20-min Summit Follow-up"** — not created.
+- **Follow-up email drafts (3)** — not saved in Gmail.
+- **Session / lab registration** — L815, L816, L817, L335, L821, L320, L321, L223, L535, L221 not booked.
+- **Certification exam slots (AD0-E712, AD0-E555)** — not booked at Summit.
+- **Pre-Summit LinkedIn announcement post** — not published.
+- **NotebookLM 3 notebooks + Audio Overviews** — not created.
+- **Flight content pack** — nothing downloaded yet; must finish before leaving home wifi.
+- **Pitch practice (3 versions, out loud 3× each)** — not done.
+- **Physical pack** — per checklist.
+
+### Plan document status
+
+| Plan | Status |
+|------|--------|
+| `2026-04-06-adobe-summit-preparation.md` | Superseded by this plan |
+| `2026-04-10-ai-forte-website-plan.md` | **Superseded in practice** — work absorbed into scroll-narrative + website-cleanup-SEO plans |
+| `2026-04-14-astro-dual-theme.md` | **Superseded** (dark mode dropped, `f0699cd`) |
+| `2026-04-14-astro-palette-a-migration.md` | Partially applied — colors locked, component repaint pending |
+| `2026-04-14-logo-revisit.md` | **Deferred** — post-Summit |
+| `2026-04-16-website-cleanup-seo.md` | **Complete** — commits shipped Apr 17 |
+| `2026-04-17-scroll-narrative-transformation.md` | **Phase A shipped, Phase B pending** |
+
+### Apr 17 final-day execution order (ruthless prioritization)
+
+Given remaining hours before evening departure, work the list top-down and STOP when the plane boards. Skip gracefully rather than half-finishing.
+
+1. **Deploy the site to Vercel** — whatever state it's in. A live URL at `ai-forte.xyz` or `ai-forte.vercel.app` unlocks every downstream asset. *(30–45 min)*
+2. **Book certification exams** at [summit.adobe.com/na/certifications](https://summit.adobe.com/na/certifications/) — AD0-E712 + AD0-E555. Target Wed Apr 22. *(15 min)*
+3. **Book priority labs** — L817, L815, L335, L816, L821, L223, L320, L321. *(20 min)*
+4. **Update LinkedIn profile** — banner upload (`resources/linkedin/ai-forte-linkedin-banner.png`), headline (Option A or B), About paste-in, skills reorder, save QR to phone home screen. *(45 min)*
+5. **Digital business card (Blinq free)** — headshot + logo + headline + live site URL + Calendly link. Save QR to phone. *(20 min)*
+6. **Calendly** — "AI Forte — 20-min Summit Follow-up". Paste link into LinkedIn About, business card, email signature. *(15 min)*
+7. **One-pager PDF** — Canva: drop `resources/one-pager/ai-forte-one-pager-header-1.jpg` + AI Forte structure (Task 16A Step 2). Include live site URL. Export → phone → LinkedIn Featured. *(45 min)*
+8. **NotebookLM — Commerce + Marketo only** (skip AI Agents if time-crunched). Populate sources, generate Audio Overviews, **download MP3 to phone**. *(30 min setup + ~10 min generation)*
+9. **Lead capture sheet + 3 email templates + LinkedIn pre-Summit post** in one batch. *(30 min)*
+10. **Flight content pack download** — Udemy offline, TED playlist, both cert prep PDFs, `sessions-parsed.md`, NotebookLM audio, AI Forte cheat sheet. See Flight Pack checklist below. **MUST finish before leaving home wifi.** *(30–45 min)*
+11. **Pitch practice** — 10-sec, 30-sec, problem-solver. Out loud 3× each. *(15 min)*
+12. **Physical pack** — laptop + charger, phone battery, shoes, layers, notepad. *(15 min)*
+
+**Drop if time-crunched:** AI Agents NotebookLM notebook, Formspree contact form, scroll-narrative Phase B (site can ship with Phase A only).
 
 ---
 
@@ -576,31 +652,37 @@ You will NOT be exam-ready via 3 hours of prep alone — but combined with the f
 
 ---
 
-## Phase E: Travel Day (Apr 17)
+## Phase E: Travel Day (Apr 17) — REVISED
 
-### Task 18A: Final Review & Departure (Apr 17, 2 hrs)
+> **The original Apr 17 "light review day" assumed Apr 11-16 shipped on schedule. They didn't.** See [Current State — Reality Check](#current-state--reality-check-apr-17) at the top for the actual Apr 17 execution order. The checklist below is retained as a final cross-check before walking out the door.
 
-- [ ] **Step 1 — Knowledge refresh (45 min)**
-  - Review AI Forte cheat sheet
-  - Review HubSpot↔Marketo mapping table
-  - Practice elevator pitches out loud 3x each
-  - Review Monday session schedule
+### Task 18A: Final Pre-Departure Checklist
 
-- [ ] **Step 2 — Final digital checklist (30 min)**
-  - Summit app installed, schedule built
-  - Both cert exams booked
-  - One-pager PDF on phone
-  - LinkedIn QR code on phone home screen
-  - Blinq/digital business card set up
-  - Google Sheet lead tracker ready
-  - Follow-up email drafts saved in Gmail
-  - Calendly link tested
-  - Download flight content pack (see next section) — critical to do BEFORE leaving home wifi
+Run through this AFTER executing items 1–12 in the Reality Check execution order.
 
-- [ ] **Step 3 — Physical pack check (15 min)**
-  - Laptop + charger, phone + portable battery, comfortable shoes, layers, notepad/pen
+- [ ] **Knowledge refresh (condensed)**
+  - AI Forte elevator pitch (10s / 30s / problem-solver) rehearsed out loud 3× each
+  - HubSpot↔Marketo mapping table skimmed
+  - Monday session schedule memorized (GS1 keynote + Welcome Reception are non-negotiable anchors)
 
-- [ ] **Step 4 — Depart evening**
+- [ ] **Final digital checklist**
+  - [ ] Summit app installed, schedule built
+  - [ ] Both cert exams booked (AD0-E712 + AD0-E555)
+  - [ ] Priority labs booked (L817, L815, L335, L816, L821 minimum)
+  - [ ] Live site URL copied everywhere (LinkedIn Website field, Blinq card, email signature)
+  - [ ] One-pager PDF on phone + uploaded to LinkedIn Featured
+  - [ ] LinkedIn QR code saved to phone home screen
+  - [ ] Blinq/digital business card set up, QR saved to phone
+  - [ ] Google Sheet lead tracker created
+  - [ ] 3 follow-up email drafts saved in Gmail
+  - [ ] Calendly link tested
+  - [ ] Pre-Summit LinkedIn post published
+  - [ ] **Flight content pack fully downloaded** (see Flight Pack section — this is the hard deadline before leaving home wifi)
+
+- [ ] **Physical pack**
+  - Laptop + charger, phone + portable battery, comfortable shoes, layers, notepad/pen, printed AI Forte cheat sheet as backup
+
+- [ ] **Depart evening**
 
 ---
 
@@ -926,17 +1008,17 @@ Apr 20-22     EXECUTE — sessions, networking, cert exams
 
 ## Daily Collateral Ship Tracker
 
-Check off as you ship each day. The goal: **measurable daily progress**, not end-of-week rush.
+> **Updated Apr 17** — reflects actual state. The original website-task schedule (Tasks 1–11) was absorbed into the scroll-narrative + website-cleanup-SEO plans; tracker below shows what actually happened vs. the original intent.
 
 | Day | Website | LinkedIn | Brand | One-Pager |
 |-----|---------|----------|-------|-----------|
-| Apr 11 | ⬜ Services rewritten<br>⬜ Hero rewritten | | | |
-| Apr 12 | ⬜ Case studies honest<br>⬜ Adobe ecosystem section | | | |
-| Apr 13 | ⬜ /adobe-summit page live (local) | | | |
-| Apr 14 | ⬜ Summit banner<br>⬜ Tech stack section<br>⬜ Testimonials audited | | | |
-| Apr 15 | ⬜ Logo + favicon + OG wired | ⬜ Banner uploaded<br>⬜ Headline updated<br>⬜ About rewritten<br>⬜ Skills reordered<br>⬜ QR code saved | ⬜ Logo generated<br>⬜ Icon generated<br>⬜ LinkedIn banner generated | |
-| Apr 16 | ⬜ **DEPLOYED LIVE**<br>⬜ Contact form wired | ⬜ Pre-Summit post published | ⬜ One-pager header generated | ⬜ One-pager PDF built<br>⬜ Uploaded to LinkedIn Featured |
-| Apr 17 | ⬜ Smoke test | ⬜ Site URL in profile | | ⬜ On phone for travel |
+| Apr 11 | ⬜ *(skipped — schedule slipped)* | | | |
+| Apr 12 | ⬜ *(skipped)* | | | |
+| Apr 13 | ⬜ *(skipped; git repo + BOARD/CHANGELOG initialized instead, `b68e112`)* | | | |
+| Apr 14 | | | ✅ Palette A locked (`5ec0b1a`)<br>✅ All 9 brand assets generated (`c1b3be3`) | |
+| Apr 15 | | ⬜ Banner upload<br>⬜ Headline<br>⬜ About<br>⬜ Skills<br>⬜ QR | ✅ Logo, icon, banner, OG, social, card, one-pager header, headshot — all in `resources/` | |
+| Apr 16 | ✅ SEO/AEO audit, Terms/Privacy, llms.txt, JSON-LD<br>✅ Honest stats, removed fake testimonials<br>⬜ **NOT YET DEPLOYED**<br>⬜ Contact form | ⬜ Pre-Summit post | ✅ Assets ready | ⬜ PDF not built |
+| Apr 17 | ✅ Scroll-narrative Phase A (Ch 1 + 2)<br>⬜ **DEPLOY TODAY**<br>⬜ Smoke test | ⬜ Everything from Apr 15 + site URL + Summit post | | ⬜ Build in Canva today + phone |
 
 ---
 

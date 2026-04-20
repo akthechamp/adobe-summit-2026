@@ -10,41 +10,36 @@
 
 ## Backlog
 
-Items ready to be picked up. Ordered by priority (top = highest).
+**Reordered Apr 17** — top 12 are departure-blockers in execution order. See [Reality Check in the revised plan](docs/plans/2026-04-10-revised-summit-preparation.md#current-state--reality-check-apr-17).
 
-- [ ] `[SITE]` Task 1: Rewrite services data for Adobe ecosystem — `src/data/services.ts` *(30 min)*
-- [ ] `[SITE]` Task 2: Rewrite hero section — `HeroSection.astro` *(25 min)*
-- [ ] `[SITE]` Task 3: Case studies — honest relabeling *(20 min)*
-- [ ] `[SITE]` Task 4: Adobe Ecosystem section — new component + data *(45 min)*
-- [ ] `[SITE]` Task 5: `/adobe-summit` landing page *(60 min)*
-- [ ] `[SITE]` Task 6: Summit banner + navbar link *(20 min)*
-- [ ] `[SITE]` Task 8: TrustedBy → tech stack logos *(20 min)*
-- [ ] `[SITE]` Task 9: Testimonials audit *(15 min)*
-- [ ] `[BRAND]` Task 7: Generate logo, favicon, OG image via Gemini 3 *(30 min)*
-- [ ] `[SITE]` Task 10: Deploy to Vercel *(30 min)*
-- [ ] `[SITE]` Task 11: Wire contact form (Formspree) *(30 min — optional)*
-- [ ] `[BRAND]` LinkedIn overhaul — banner, headline, About, skills, Featured, QR code *(90 min)*
-- [ ] `[BRAND]` One-pager PDF — design + export *(45 min)*
-- [ ] `[BRAND]` Digital business card setup (Blinq/Popl) *(15 min)*
-- [ ] `[LEARN]` Commerce foundation — Udemy + Adobe tutorials + NotebookLM *(90 min)*
-- [ ] `[LEARN]` Marketo foundation — Udemy + Adobe + HubSpot↔Marketo mapping *(90 min)*
-- [ ] `[LEARN]` AEM foundation — Udemy/CloudFoundation + Edge Delivery *(90 min)*
-- [ ] `[LEARN]` AI Agent Orchestration — Deloitte, Kanerika, Adobe agent landscape *(60 min)*
-- [ ] `[LEARN]` AI Forte cheat sheet — write `notes/ai-forte-cheat-sheet.md` *(30 min)*
-- [ ] `[CERT]` Commerce cert prep — prep guide + EDUSUM practice test *(90 min)*
-- [ ] `[CERT]` Marketo cert prep — prep guide + EDUSUM practice test *(90 min)*
-- [ ] `[CERT]` Book both exam slots at Summit *(15 min)*
-- [ ] `[OPS]` NotebookLM setup — 3 notebooks + populate sources + generate Audio Overviews *(20 min)*
-- [ ] `[OPS]` Calendly setup — "AI Forte 20-min Summit Follow-up" *(15 min)*
-- [ ] `[OPS]` Lead capture Google Sheet setup *(15 min)*
-- [ ] `[OPS]` Follow-up email templates — 3 drafts saved in Gmail *(30 min)*
-- [ ] `[NETWORK]` Session schedule — register for priority labs and sessions *(45 min)*
-- [ ] `[NETWORK]` Pre-Summit LinkedIn post with site URL *(15 min)*
+### P0 — Ship today before departure (in order)
+- [ ] `[SITE]` **DEPLOY** astro-site to Vercel — whatever state, ship it *(30–45 min)*
+- [ ] `[CERT]` Book both exam slots at Summit (AD0-E712 + AD0-E555) — target Wed Apr 22 *(15 min)*
+- [ ] `[NETWORK]` Book priority labs — L817, L815, L335, L816, L821, L223, L320, L321 *(20 min)*
+- [ ] `[BRAND]` LinkedIn overhaul — banner upload, headline, About, skills, Featured, QR *(45 min)*
+- [ ] `[BRAND]` Digital business card setup (Blinq free) with live site URL + Calendly *(20 min)*
+- [ ] `[OPS]` Calendly setup — "AI Forte — 20-min Summit Follow-up" *(15 min)*
+- [ ] `[BRAND]` One-pager PDF — Canva using `resources/one-pager/ai-forte-one-pager-header-1.jpg` + AI Forte structure from plan Task 16A Step 2 *(45 min)*
+- [ ] `[OPS]` NotebookLM — Commerce + Marketo notebooks, Audio Overviews, **download MP3 to phone** *(40 min)*
+- [ ] `[OPS]` Lead capture Google Sheet *(15 min)*
+- [ ] `[OPS]` Follow-up email templates — 3 drafts in Gmail *(30 min)*
+- [ ] `[NETWORK]` Pre-Summit LinkedIn post with live site URL *(15 min)*
+- [ ] `[OPS]` **Flight content pack** — Udemy offline, TED playlist, cert prep PDFs, NotebookLM audio, AI Forte cheat sheet — **before leaving home wifi** *(30–45 min)*
+- [ ] `[OPS]` Final pitch practice — 10-sec / 30-sec / problem-solver, out loud 3× each *(15 min)*
+- [ ] `[OPS]` Physical pack — laptop, charger, battery, shoes, layers, notepad *(15 min)*
+
+### P1 — Drop if time-crunched
+- [ ] `[OPS]` NotebookLM third notebook (AI Agents) *(10 min)*
+- [ ] `[SITE]` Contact form wiring (Formspree) *(30 min)*
+- [ ] `[SITE]` Scroll-narrative Phase B (Ch 3–6) — `docs/plans/2026-04-17-scroll-narrative-transformation.md` *(multi-hour)*
 - [ ] `[NETWORK]` Join Adobe Summit community forum *(10 min)*
-- [ ] `[LEARN]` TED Talks — watch/listen 10 sales + persuasion talks *(2.5 hrs — can split)*
-- [ ] `[OPS]` Flight content pack — download all content to phone before wifi cutoff *(30 min)*
-- [ ] `[OPS]` Physical pack checklist — laptop, charger, battery, shoes *(15 min)*
-- [ ] `[OPS]` Final pitch practice — 3 versions out loud *(15 min)*
+- [ ] `[LEARN]` AI Forte cheat sheet — `notes/ai-forte-cheat-sheet.md` *(30 min)*
+
+### Flight / Vegas (defer to travel time)
+- [ ] `[LEARN]` TED Talks — 10 sales + persuasion talks *(2.5 hrs on flight)*
+- [ ] `[CERT]` Commerce cert practice — EDUSUM + Udemy *(flight)*
+- [ ] `[CERT]` Marketo cert practice — EDUSUM + Udemy *(flight)*
+- [ ] `[LEARN]` AEM Basics (Bortnikov) — 1.5× speed *(flight)*
 
 ---
 
@@ -64,9 +59,18 @@ Completed items. Add date when moved here.
 - [x] `[OPS]` Session parsing — 325 sessions organized (Apr 6)
 - [x] `[OPS]` Curated learning resources document (Apr 7)
 - [x] `[OPS]` Revised plan v2 — AI Forte pivot, NotebookLM, daily collateral (Apr 10)
-- [x] `[SITE]` Website plan created — 11 tasks mapped to daily schedule (Apr 10)
-- [x] `[OPS]` Git repo initialized + BOARD + CHANGELOG (Apr 13)
+- [x] `[SITE]` Website plan created — superseded in practice by scroll-narrative + cleanup-SEO plans (Apr 10)
+- [x] `[OPS]` Git repo initialized + BOARD + CHANGELOG (Apr 13, `b68e112`)
 - [x] `[LEARN]` Foundation (partial) — ecosystem overview started (Apr 6-9)
+- [x] `[BRAND]` Palette A (Warm Premium) locked with decision record (Apr 14, `5ec0b1a`)
+- [x] `[BRAND]` All 9 AI Forte brand assets generated via Nano Banana Pro in Palette A — logo, icon, LinkedIn banner, OG, social post, summit announcement, business card, one-pager header, headshot (Apr 14, `c1b3be3`)
+- [x] `[SITE]` Website SEO/AEO audit + Terms/Privacy + canonical/OG/JSON-LD + llms.txt + UTM attribution (Apr 17, `2026-04-16-website-cleanup-seo.md`)
+- [x] `[SITE]` Honest content pass — removed fake testimonials, unverified compliance claims, dead footer links (Apr 17)
+- [x] `[SITE]` Scroll-narrative Phase A — Ch 1 Hook + Ch 2 Problem + chapter lib + reduced-motion (Apr 17)
+- [x] `[SITE]` Dark mode dropped, dual-theme plan superseded (`f0699cd`)
+- [x] `[LEARN]` AEM foundation (merged with broader research)
+- [x] `[LEARN]` Commerce foundation (merged)
+- [x] `[LEARN]` Marketo foundation (merged)
 
 ---
 
